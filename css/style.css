@@ -42,12 +42,6 @@ ul {
   outline: none;
 }
 
-.overflow-auto {
-  overflow: auto;
-  min-height: 60px;
-  height: 60%;
-}
-
 /* Typo */
 *:not(.bottom-bar) {
   color: #676767;
@@ -80,7 +74,6 @@ ul {
 .app-view {
   height: 100vh;
   background-color: #22262D;
-  width: 100%;
   display: flex;
 }
 
@@ -95,6 +88,7 @@ ul {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  justify-content: flex-start;
 }
 
 .side-bar [class*="btn_"] {
@@ -105,7 +99,7 @@ ul {
 .side-bar__header {
   padding-top: 15px;
   padding-bottom: 15px;
-  /* height: 209px; */
+  height: 209px;
   flex-grow: 1;
   width: 100%;
 }
@@ -121,20 +115,43 @@ ul {
   justify-content: space-between;
   flex-grow: 2;
   width: 100%;
+  height: calc(100% - 209px);
 }
 
 .playlist {
-  height: 80%;
+  height: calc(100% - 40px);
+  display: flex;
+  flex-direction: column;
 }
+
+.playlist ul
 
 .playlist_title {
   padding-bottom: 10px;
 }
 
-.playlist ul {
-  height: min-content;
+.account {
+  flex-shrink: 0;
+  height: 40px;
 }
 
-.account {
-  height: 20%;
+.overflow-auto {
+  overflow: auto;
+  min-height: 50px;
+}
+
+/* Collections */
+.collections {
+  width: calc(100% - 200px);
+}
+
+.collections__top-bar {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  padding: 30px 0;
+}
+
+.btn_upgrade {
+
 }
