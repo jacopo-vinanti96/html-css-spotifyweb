@@ -99,9 +99,7 @@ ul {
 .side-bar__header {
   padding-top: 15px;
   padding-bottom: 15px;
-  height: 209px;
-  flex-grow: 1;
-  width: 100%;
+  height: 150px;
 }
 
 .side-bar__header .logo {
@@ -112,16 +110,14 @@ ul {
 .side-bar__acount-playlist {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 2;
-  width: 100%;
-  height: calc(100% - 209px);
+  height: calc(100% - 150px);
 }
 
 .playlist {
-  height: calc(100% - 40px);
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .playlist ul
