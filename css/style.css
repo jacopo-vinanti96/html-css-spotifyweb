@@ -117,10 +117,14 @@ ul {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
-.playlist ul
+.playlist .playlist__list_account {
+  height: calc(100% - 62px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .playlist_title {
   padding-bottom: 10px;
@@ -129,6 +133,10 @@ ul {
 .account {
   flex-shrink: 0;
   height: 40px;
+}
+
+.account .btn_link {
+  margin-bottom: 0;
 }
 
 .overflow-auto {
