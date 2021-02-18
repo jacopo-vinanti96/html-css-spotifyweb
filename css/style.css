@@ -94,7 +94,7 @@ ul {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .side-bar [class*="btn_"] {
