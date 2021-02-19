@@ -14,13 +14,14 @@
     <aside class="side-bar">
       <header class="side-bar__header">
         <img class="logo text--wcolor" src="img/logo.svg" alt="logo">
+        <img class="logo-mobile" src="img/logo-small.svg" alt="logo">
         <ul>
-          <li><a class="btn_link flex-align-middle" href="#"><img src="img/home.svg" alt="Home icon">Home</a></li>
-          <li><button class="btn_function flex-align-middle" type="button" name="button"><img src="img/search.svg" alt="search icon">Cerca</button></li>
-          <li><a class="btn_link flex-align-middle" href="#"><img src="img/libreria.svg" alt="library icon">La mia libreria</a></li>
+          <li><a class="btn_link flex-align-middle" href="#"><img src="img/home.svg" alt="Home icon"><span class="mobile-d-none">Home</span></a></li>
+          <li><button class="btn_function flex-align-middle" type="button" name="button"><img src="img/search.svg" alt="search icon"><span class="mobile-d-none">Cerca</span></button></li>
+          <li><a class="btn_link flex-align-middle" href="#"><img src="img/libreria.svg" alt="library icon"><span class="mobile-d-none">La mia libreria</span></a></li>
         </ul>
       </header>
-      <div class="side-bar__playlist">
+      <div class="side-bar__playlist mobile-d-none">
         <h3 class="playlist--title">Playlist</h3>
         <button class="btn_function btn_function--playlist-creation flex-align-middle" type="button" name="button"><span class="plus-square">+</span>Crea Playlist</button>
         <ul>
@@ -32,11 +33,11 @@
           <li><a class="btn_link d-block" href="#">Nome Playlist</a></li>
           <li><a class="btn_link d-block" href="#">Nome Playlist</a></li>
         </ul>
-        <div class="account">
-          <a class="btn_link flex-align-middle" href="#"><img src="img/download.svg" alt="download icon">Installa app</a>
-          <div class="account__profile flex-align-middle">
-            <img src="img/profile.svg" alt="profile picture" class="profile__picture"><span class="profile__username text--wcolor">John Doe</span>
-          </div>
+      </div>
+      <div class="account">
+        <a class="btn_link flex-align-middle" href="#"><img src="img/download.svg" alt="download icon"><span class="mobile-d-none">Installa app</span></a>
+        <div class="account__profile flex-align-middle">
+          <img src="img/profile.svg" alt="profile picture" class="profile__picture"><span class="profile__username text--wcolor mobile-d-none">John Doe</span>
         </div>
       </div>
     </aside>
@@ -46,12 +47,12 @@
       </div>
       <nav class="collections__nav">
         <ul class="list_flex">
-          <li><a class="btn_link" href="#">Scopri</a></li>
-          <li><a class="btn_link" href="#">Scopri</a></li>
-          <li><a class="btn_link" href="#">Scopri</a></li>
-          <li><a class="btn_link" href="#">Scopri</a></li>
-          <li><a class="btn_link" href="#">Scopri</a></li>
-          <li><a class="btn_link" href="#">Scopri</a></li>
+          <li><a class="btn_link" href="#">in evidenza</a></li>
+          <li><a class="btn_link" href="#">podcast</a></li>
+          <li><a class="btn_link" href="#">classifiche</a></li>
+          <li><a class="btn_link" href="#">generi e mood</a></li>
+          <li><a class="btn_link" href="#">nuove uscite</a></li>
+          <li><a class="btn_link" href="#">scopri</a></li>
         </ul>
       </nav>
       <div class="collections__section">

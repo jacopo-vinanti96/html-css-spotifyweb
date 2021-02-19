@@ -108,14 +108,54 @@ ul {
   flex-shrink: 0;
   width: 230px;
   background-color: black;
-  padding-left: 15px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  padding-right: 15px;
 }
 
 .side-bar [class*="btn_"] {
   margin-bottom: 10px;
+}
+
+.logo,
+.side-bar__playlist,
+.account {
+  padding-left: 15px;
+}
+
+.logo-mobile {
+  display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 570px) {
+  .side-bar {
+    width: 60px;
+    padding-right: 0;
+  }
+
+  .mobile-d-none {
+    display: none;
+  }
+
+  .account {
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 30px;
+  }
+
 }
 
 /* Side-bar__header */
@@ -126,12 +166,37 @@ ul {
 
 .side-bar__header .logo {
   padding-bottom: 15px;
-  width: 140px;
+  width: 150px;
+}
+
+.side-bar__header li {
+  padding-left: 15px;
+}
+
+.side-bar__header li:first-child, .side-bar__header li:hover{
+  border-left: 2px solid #ADFF3E;
+  padding-left: 13px;
+}
+
+.side-bar__header li:first-child a {
+  filter: brightness(250%);
 }
 
 .side-bar__header li img {
   width: 23px;
   margin-right: 6px;
+}
+
+.side-bar__header li button {
+  width: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 570px) {
+  .side-bar__header li img {
+    width: 30px;
+    margin-right: 0;
+  }
 }
 
 /* Side-bar__account-playlist */
@@ -158,7 +223,6 @@ ul {
 
 .side-bar__playlist ul {
   overflow: auto;
-  min-height: 50px;
 }
 
 .side-bar__playlist li {
@@ -169,8 +233,17 @@ ul {
   padding-bottom: 10px;
 }
 
+/* Responsive */
+@media screen and (max-width: 570px) {
+  .mobile-d-none {
+    display: none;
+  }
+
+}
+
 .account {
   margin-top: auto;
+  padding-left: 15px;
 }
 
 .account .btn_link {
@@ -185,9 +258,8 @@ ul {
 }
 
 .account__profile {
-border-top: 1px solid #676767;
-margin-right: 15px;
-padding: 11px 0 6px;
+  border-top: 1px solid #676767;
+  padding: 11px 0 6px;
 }
 
 .profile__picture {
@@ -202,6 +274,30 @@ padding: 11px 0 6px;
   font-size: 15px;
 }
 
+/* Responsive */
+@media screen and (max-width: 570px) {
+  .account {
+    padding-left: 0;
+  }
+
+  .account .btn_link img {
+    width: 25px;
+    margin: auto;
+    margin-right: 5px;
+  }
+
+  .account__profile {
+    border-top: none;
+  }
+
+  .profile__picture {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+  }
+}
+
+
 /* Collections */
 .collections {
   padding: 0 15px 70px 15px;
@@ -211,6 +307,7 @@ padding: 11px 0 6px;
   height: calc(100% - 64px);
 }
 
+/* Collections Top-bar */
 .collections__top-bar {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.3);
@@ -237,6 +334,7 @@ padding: 11px 0 6px;
   transform: scale(1.1);
 }
 
+/* Collections Body */
 .collections__nav {
   margin-top: 90px;
   margin-left: auto;
@@ -245,6 +343,8 @@ padding: 11px 0 6px;
 
 .collections__nav .list_flex li {
   margin-right: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .collections__section {
