@@ -281,9 +281,9 @@ ul {
   }
 
   .account .btn_link img {
-    width: 25px;
+    width: 22px;
     margin: auto;
-    margin-right: 5px;
+    margin-right: 6px;
   }
 
   .account__profile {
@@ -311,11 +311,11 @@ ul {
 .collections__top-bar {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.3);
-  width: calc(100% - 200px);
+  width: calc(100% - 230px);
   height: 80px;
   z-index: 1030;
   top: 0;
-  left: 200px;
+  left: 230px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -334,6 +334,13 @@ ul {
   transform: scale(1.1);
 }
 
+/* Responsive */
+@media screen and (max-width: 570px) {
+  .collections__top-bar {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+}
 /* Collections Body */
 .collections__nav {
   margin-top: 90px;
