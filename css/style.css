@@ -40,6 +40,13 @@ ul {
   outline: none;
 }
 
+.btn_link:hover,
+.btn_link:focus,
+.btn_function:hover,
+.btn_function:focus {
+  filter: brightness(250%);
+}
+
 .btn_function {
   border: none;
   background-color: transparent;
@@ -61,6 +68,7 @@ ul {
 
 * {
   font-size: 14px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .playlist--title,
@@ -81,6 +89,7 @@ ul {
 
 .playlist--title {
   text-transform: uppercase;
+  padding-bottom: 5px;
 }
 
 /* MAIN */
@@ -97,7 +106,7 @@ ul {
 .side-bar {
   height: calc(100% - 64px);
   flex-shrink: 0;
-  width: 200px;
+  width: 230px;
   background-color: black;
   padding-left: 15px;
   overflow: hidden;
@@ -117,6 +126,12 @@ ul {
 
 .side-bar__header .logo {
   padding-bottom: 15px;
+  width: 140px;
+}
+
+.side-bar__header li img {
+  width: 23px;
+  margin-right: 6px;
 }
 
 /* Side-bar__account-playlist */
@@ -125,6 +140,20 @@ ul {
   flex-direction: column;
   height: 100%;
   overflow: hidden;
+}
+
+.btn_function--playlist-creation {
+  font-size: 16px;
+}
+
+.btn_function--playlist-creation .plus-square {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 45px;
+  background-color: #676767;
+  color: black;
+  margin-right: 9px;
 }
 
 .side-bar__playlist ul {
@@ -141,13 +170,36 @@ ul {
 }
 
 .account {
-  flex-shrink: 0;
-  height: 40px;
   margin-top: auto;
 }
 
 .account .btn_link {
   margin-bottom: 0;
+  padding: 8px 0;
+
+}
+
+.account .btn_link img {
+  width: 13px;
+  margin-right: 12px;
+}
+
+.account__profile {
+border-top: 1px solid #676767;
+margin-right: 15px;
+padding: 11px 0 6px;
+}
+
+.profile__picture {
+  width: 23px;
+  height: 23px;
+  margin-right: 8px;
+  background-color: #676767;
+  border-radius: 50%;
+}
+
+.profile__username {
+  font-size: 15px;
 }
 
 /* Collections */
@@ -155,7 +207,7 @@ ul {
   padding: 0 15px 70px 15px;
   overflow-y: auto;
   flex-grow: 1;
-  width: calc(100% - 200px);
+  width: calc(100% - 230px);
   height: calc(100% - 64px);
 }
 

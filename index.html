@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>Spotify - COPIA</title>
 </head>
@@ -11,27 +13,30 @@
   <main class="app-view">
     <aside class="side-bar">
       <header class="side-bar__header">
-        <img class="logo" src="https://via.placeholder.com/100x50.png?text=SPOTIFY" alt="">
-        <!-- <ul>
-          <li><a class="btn_link flex-align-middle" href="#"><img src="https://via.placeholder.com/30x30.png" alt=""> Home</a></li>
-          <li><button class="btn_function flex-align-middle" type="button" name="button"><img src="https://via.placeholder.com/30x30.png" alt=""> Cerca</button></li>
-          <li><a class="btn_link flex-align-middle" href="#"><img src="https://via.placeholder.com/30x30.png" alt=""> La mia libreria</a></li>
-        </ul> -->
+        <img class="logo text--wcolor" src="img/logo.svg" alt="logo">
+        <ul>
+          <li><a class="btn_link flex-align-middle" href="#"><img src="img/home.svg" alt="Home icon">Home</a></li>
+          <li><button class="btn_function flex-align-middle" type="button" name="button"><img src="img/search.svg" alt="search icon">Cerca</button></li>
+          <li><a class="btn_link flex-align-middle" href="#"><img src="img/libreria.svg" alt="library icon">La mia libreria</a></li>
+        </ul>
       </header>
       <div class="side-bar__playlist">
         <h3 class="playlist--title">Playlist</h3>
-        <button class="btn_function flex-align-middle" type="button" name="button"><span class="plus-square">+</span>Crea playlist</button>
+        <button class="btn_function btn_function--playlist-creation flex-align-middle" type="button" name="button"><span class="plus-square">+</span>Crea Playlist</button>
         <ul>
-          <li><a class="btn_link d-block" href="#">Nome playlist</a></li>
-          <li><a class="btn_link d-block" href="#">Nome playlist</a></li>
-          <li><a class="btn_link d-block" href="#">Nome playlist</a></li>
-          <li><a class="btn_link d-block" href="#">Nome playlist</a></li>
-          <li><a class="btn_link d-block" href="#">Nome playlist</a></li>
-          <li><a class="btn_link d-block" href="#">Nome playlist</a></li>
-          <li><a class="btn_link d-block" href="#">Nome playlist</a></li>
+          <li><a class="btn_link d-block" href="#">Nome Playlist</a></li>
+          <li><a class="btn_link d-block" href="#">Nome Playlist</a></li>
+          <li><a class="btn_link d-block" href="#">Nome Playlist</a></li>
+          <li><a class="btn_link d-block" href="#">Nome Playlist</a></li>
+          <li><a class="btn_link d-block" href="#">Nome Playlist</a></li>
+          <li><a class="btn_link d-block" href="#">Nome Playlist</a></li>
+          <li><a class="btn_link d-block" href="#">Nome Playlist</a></li>
         </ul>
-        <div class="account flex-align-middle">
-          <a class="btn_link d-block" href="#">Installa app</a>
+        <div class="account">
+          <a class="btn_link flex-align-middle" href="#"><img src="img/download.svg" alt="download icon">Installa app</a>
+          <div class="account__profile flex-align-middle">
+            <img src="img/profile.svg" alt="profile picture" class="profile__picture"></img><span class="profile__username text--wcolor">John Doe</span>
+          </div>
         </div>
       </div>
     </aside>
