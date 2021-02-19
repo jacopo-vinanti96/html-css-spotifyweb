@@ -89,20 +89,20 @@ ul {
   width: 100%;
   background-color: #22262D;
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* Side-bar  */
 
 .side-bar {
   height: calc(100% - 64px);
+  flex-shrink: 0;
   width: 200px;
   background-color: black;
   padding-left: 15px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
 }
 
 .side-bar [class*="btn_"] {
@@ -113,7 +113,6 @@ ul {
 .side-bar__header {
   padding-top: 15px;
   padding-bottom: 15px;
-  height: 150px;
 }
 
 .side-bar__header .logo {
@@ -121,23 +120,20 @@ ul {
 }
 
 /* Side-bar__account-playlist */
-.side-bar__acount-playlist {
+.side-bar__playlist {
   display: flex;
   flex-direction: column;
-  height: calc(100% - 150px);
-}
-
-.playlist {
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
 }
 
-.playlist .playlist__list_account {
-  height: calc(100% - 62px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.side-bar__playlist ul {
+  overflow: auto;
+  min-height: 50px;
+}
+
+.side-bar__playlist li {
+  margin-bottom: 10px;
 }
 
 .playlist_title {
@@ -147,22 +143,20 @@ ul {
 .account {
   flex-shrink: 0;
   height: 40px;
+  margin-top: auto;
 }
 
 .account .btn_link {
   margin-bottom: 0;
 }
 
-.overflow-auto {
-  overflow: auto;
-  min-height: 50px;
-}
-
 /* Collections */
 .collections {
-  width: calc(100% - 200px);
   padding: 0 15px 70px 15px;
-  overflow: auto;
+  overflow-y: auto;
+  flex-grow: 1;
+  width: calc(100% - 200px);
+  height: calc(100% - 64px);
 }
 
 .collections__top-bar {
@@ -223,13 +217,13 @@ ul {
 
 /* Bottom-bar */
 .bottom-bar {
-  position: fixed;
-  z-index: 1029;
   background-color: #1D1D1D;
-  bottom: 0;
-  left: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 15px;
+  flex-shrink: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
