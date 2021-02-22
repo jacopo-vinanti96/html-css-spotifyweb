@@ -454,7 +454,7 @@ ul {
   pointer-events: none;
 }
 
-.btn_function--artist {
+.box__cover--artist {
   border-radius: 50%;
   overflow: hidden;
 }
@@ -494,12 +494,41 @@ ul {
 /* Bottom-bar */
 .bottom-bar {
   background-color: #1D1D1D;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  flex-shrink: 0;
   position: fixed;
   bottom: 0;
   left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  height: 64px;
+  width: 100%;
+}
+
+.bottom-bar__track-infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 230px;
+  padding: 0 10px;
+}
+
+.bottom-bar__track-infos img {
+  width: 40px;
+}
+
+.track-infos__text {
+  padding-left: 10px;
+}
+
+.track-infos__text h5 {
+  font-size: 13px
+}
+
+.track-infos__text h6 {
+  font-size: 11px;
+}
+
+.track-infos__actions {
+  margin-left: auto;
 }
