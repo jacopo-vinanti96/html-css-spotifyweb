@@ -62,8 +62,16 @@ ul {
 }
 
 /* Typo */
-*:not(.bottom-bar) {
+.side-bar * {
   color: #676767;
+}
+
+.collections * {
+  color: #75777C;
+}
+
+.bottom-bar * {
+  color: #808080;
 }
 
 * {
@@ -171,11 +179,17 @@ ul {
 
 .side-bar__header li {
   padding-left: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .side-bar__header li:first-child, .side-bar__header li:hover{
   border-left: 2px solid #ADFF3E;
   padding-left: 13px;
+}
+
+.side-bar__header li [class*="btn_"] {
+  margin-bottom: 0;
 }
 
 .side-bar__header li:first-child a {
@@ -199,7 +213,7 @@ ul {
   }
 }
 
-/* Side-bar__account-playlist */
+/* Side-bar__playlist */
 .side-bar__playlist {
   display: flex;
   flex-direction: column;
@@ -238,9 +252,9 @@ ul {
   .mobile-d-none {
     display: none;
   }
-
 }
 
+/* Side-bar__account */
 .account {
   margin-top: auto;
   padding-left: 15px;
@@ -342,20 +356,66 @@ ul {
   }
 }
 /* Collections Body */
+
+/* Collections__nav */
 .collections__nav {
+  margin: auto;
   margin-top: 90px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 20px;
 }
 
-.collections__nav .list_flex li {
-  margin-right: 20px;
+.collections__nav li {
   text-transform: uppercase;
   font-size: 18px;
 }
 
+.collections__nav li:not(:first-child) {
+  padding-bottom: 2px;
+}
+
+.collections__nav li:hover,
+.collections__nav li:focus {
+  padding-bottom: 0;
+}
+
+.collections__nav li::after {
+  content: '';
+  display: none;
+  width: 35px;
+  background-color: #ADFF3E;
+  height: 2px;
+  filter: brightness(100%);
+  margin: auto;
+}
+
+.collections__nav li:hover::after,
+.collections__nav li:focus::after {
+  display: block;
+}
+
+.collections__nav li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.collections__nav li:first-child::after {
+  display: block;
+}
+
+.collections__nav li:first-child a {
+  filter: brightness(250%);
+}
+
+/* Collections__Section */
 .collections__section {
-  margin-top: 30px;
+  padding-top: 25px;
+}
+
+.collections__section__top-text {
+  padding-bottom: 25px;
+}
+
+.collections__section__top-text p {
+  padding-top: 8px;
 }
 
 .collections__row {
@@ -367,11 +427,22 @@ ul {
   width: calc(100% / 6 - 15px);
   margin-right: 15px;
   text-align: center;
+  padding-top: 10px;
 }
 
 .collections__row__box img {
   width: 100%;
 }
+
+.description--title {
+  padding-top: 10px;
+}
+
+.description--title ~ p {
+  padding: 10px 0;
+}
+
+/* Collections overlay */
 
 /* Responsive */
 @media screen and (max-width:991px) {
