@@ -73,8 +73,8 @@ ul {
   filter: brightness(100%);
 }
 
-.player__actions button,
-.bottom-bar__options button {
+.player__actions .btn_function,
+.bottom-bar__options .btn_function {
   filter: brightness(250%);
 }
 
@@ -404,7 +404,7 @@ ul {
   padding-bottom: 20px;
 }
 
-.collections__nav li {
+.collections__nav__btn {
   text-transform: uppercase;
   font-size: 18px;
 }
@@ -426,15 +426,15 @@ ul {
   opacity: 1;
 }
 
-.collections__nav li:not(:last-child) {
+.collections__nav__btn:not(:last-child) {
   margin-right: 20px;
 }
 
-.collections__nav li:first-child .btn_link::after {
+.collections__nav__btn:first-child .btn_link::after {
   opacity: 1;
 }
 
-.collections__nav li:first-child a {
+.collections__nav__btn:first-child a {
   filter: brightness(250%);
   transition: none;
 }
