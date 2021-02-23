@@ -16,11 +16,13 @@
       <header class="side-bar__header">
         <img class="logo text--wcolor" src="img/logo.svg" alt="logo">
         <img class="logo-mobile" src="img/logo-small.svg" alt="logo">
-        <ul>
-          <li><a class="btn_link flex-align-middle" href="#"><img src="img/home.svg" alt="Home icon"><span class="mobile-d-none">Home</span></a></li>
-          <li><button class="btn_function flex-align-middle" type="button" name="button"><img src="img/search.svg" alt="search icon"><span class="mobile-d-none">Cerca</span></button></li>
-          <li><a class="btn_link flex-align-middle" href="#"><img src="img/libreria.svg" alt="library icon"><span class="mobile-d-none">La mia libreria</span></a></li>
-        </ul>
+        <nav>
+          <ul>
+            <li class="side-bar__header__nav-item"><a class="btn_link flex-align-middle" href="#"><img src="img/home.svg" alt="Home icon"><span class="mobile-d-none">Home</span></a></li>
+            <li class="side-bar__header__nav-item"><button class="btn_function flex-align-middle" type="button" name="button"><img src="img/search.svg" alt="search icon"><span class="mobile-d-none">Cerca</span></button></li>
+            <li class="side-bar__header__nav-item"><a class="btn_link flex-align-middle" href="#"><img src="img/libreria.svg" alt="library icon"><span class="mobile-d-none">La mia libreria</span></a></li>
+          </ul>
+        </nav>
       </header>
       <div class="side-bar__playlist mobile-d-none">
         <h3 class="playlist--title">Playlist</h3>
@@ -38,13 +40,14 @@
       <div class="account">
         <a class="btn_link flex-align-middle" href="#"><img src="img/download.svg" alt="download icon"><span class="mobile-d-none">Installa app</span></a>
         <div class="account__profile flex-align-middle">
-          <img src="img/profile.svg" alt="profile picture" class="profile__picture"><span class="profile__username text--wcolor mobile-d-none">John Doe</span>
+          <img src="img/profile.svg" alt="profile picture" class="profile__picture">
+          <span class="profile__username text--wcolor mobile-d-none">John Doe</span>
         </div>
       </div>
     </aside>
     <section class="collections">
-      <div class="collections__top-bar clearfix">
-        <button class="btn_function btn_upgrade text--wcolor" type="button" name="button">Effettua l' upgrade</button>
+      <div class="collections__top-bar flex-align-middle">
+        <button class="btn_function btn_upgrade text--wcolor text--xsmall" type="button" name="button">Effettua l' upgrade</button>
       </div>
       <nav class="collections__nav">
         <ul class="list_flex">
@@ -126,8 +129,8 @@
         </ul>
       </div>
     </section>
-    <section class="bottom-bar">
-      <div class="bottom-bar__track-infos">
+    <section class="bottom-bar flex-align-middle">
+      <div class="bottom-bar__track-infos flex-align-middle">
         <img src="img/betterdays.jpg" alt="dogs cover">
         <div class="track-infos__text">
           <h5 class="text--wcolor">Better Days</h5>
@@ -146,13 +149,13 @@
           <button class="btn_function" type="button" name="button"><i class="fas fa-caret-right"></i></button>
           <button class="btn_function" type="button" name="button"><i class="fas fa-redo"></i></button>
         </div>
-        <div class="player__progress-bar">
-          <span class="text--wcolor">0:25</span>
+        <div class="player__progress-bar flex-align-middle">
+          <span class="text--wcolor text--xsmall">0:25</span>
           <span class="progress-bar-back"></span>
-          <span class="text--wcolor">4:35</span>
+          <span class="text--wcolor text--xsmall">4:35</span>
         </div>
       </div>
-      <div class="bottom-bar__options">
+      <div class="bottom-bar__options flex-align-middle">
         <button class="btn_function" type="button" name="button"><i class="fas fa-list"></i></button>
         <button class="btn_function" type="button" name="button"><i class="fas fa-desktop"></i></button>
         <button class="btn_function" type="button" name="button"><i class="fas fa-volume-up"></i></button>
