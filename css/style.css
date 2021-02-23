@@ -385,19 +385,19 @@ ul {
   }
 }
 
-
 /* Collections Body */
 
 /* Collections__nav */
 .collections__nav {
   margin: auto;
   margin-top: 90px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .collections__nav__btn {
   text-transform: uppercase;
   font-size: 18px;
+  padding-bottom: 30px;
 }
 
 .collections__nav .btn_link::after {
@@ -435,8 +435,8 @@ ul {
 }
 
 /* Collections__Section */
-.collections__section {
-  padding-top: 25px;
+.collections__section:not(:last-child) {
+  padding-bottom: 25px;
 }
 
 .collections__section__top-text {
@@ -468,7 +468,7 @@ ul {
   padding-top: 10px;
 }
 
-.description--title ~ p {
+.description--title ~ h4 {
   padding: 10px 0;
 }
 
