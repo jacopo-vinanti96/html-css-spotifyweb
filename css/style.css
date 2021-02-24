@@ -195,10 +195,10 @@ ul {
   padding-bottom: 4px;
   border-left: 2px solid;
   border-color: rgba(173, 255, 62, 0);
-  transition: border-color 0.4s;
 }
 
 .side-bar__header__nav-item:first-child, .side-bar__header li:hover{
+  transition: border-color 0.4s;
   border-color: rgba(173, 255, 62, 1);
 }
 
